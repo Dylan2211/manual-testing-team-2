@@ -5,51 +5,54 @@
 | Item | Details |
 |---|---|
 | Tester identifier | member-d |
-| Date and time | |
-| Browser and version | |
+| Date and time | 3 November 2026, 2:58 pm |
+| Browser and version | Firefox, 159.0 (64-bit) |
 | Operating system | Windows |
 
 ## Login Tests
-### Test ID: YOUR-TEST-ID
+### Test ID: LOGIN-N03
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Negative |
+| Tester | member-d |
+| Website | SauceDemo |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+Check whether the application rejects a login attempt with a missing username.
 
 #### Preconditions
 
-What must be true before the test starts?
+The SauceDemo login page is open.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Username: Empty | Password: secret_sauce |
 
 #### Steps
 
-1.
-2.
-3.
+1. Open SauceDemo.
+2. Leave the username empty.
+3. Enter the password.
+4. Select Login.
+5. Observe the feedback.
 
 #### Expected Result
 
-Write this before executing the test.
+The attempt is rejected with validation feedback. The inventory is not reached.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Login is rejected with validation feedback, "Epic sadface: Username is required". The inventory is not reached.
 
 #### Evidence
 
-Not captured.
+!#### Evidence
+[View screenshot](../evidence/member-d/login-n03.png)
 
 ---
 
