@@ -51,7 +51,7 @@ Login is rejected with validation feedback, "Epic sadface: Username is required"
 
 #### Evidence
 
-![View screenshot](../results/member-d/login-n03.png)
+![View screenshot](../evidence/member-d/login-n03.png)
 
 ---
 
