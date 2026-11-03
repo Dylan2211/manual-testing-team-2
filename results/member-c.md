@@ -20,7 +20,7 @@
 | Test type | Negative |
 | Tester | member-c |
 | Website | SauceDemo |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -53,7 +53,11 @@ The attempt is rejected with validation feedback. The inventory page is not reac
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+After selecting Login with username `standard_user` and an empty password, the
+login was rejected and the page stayed on the login screen. A red error banner
+displayed "Epic sadface: Password is required". The inventory page was not
+reached. Both the username and password fields were highlighted in red with
+error icons, even though the username was valid.
 
 #### Evidence
 
