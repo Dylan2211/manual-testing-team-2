@@ -49,7 +49,7 @@ Successful login
 
 #### Evidence
 
-Captured in evidence folder "Evidence Member-a.png"
+Captured in evidence folder "LOGIN-P01.png"
 
 # Login Tests
 ### Test ID: LOGIN-R01
@@ -77,12 +77,12 @@ The validation form is open, and the input is valid
 
 #### Steps
 
-1.Input "standard_user" in username
-2.Input "wrong_password" in password
-3.Click on the green "Login" button
-4.Delete the previous incorrect password
-5.Input "secret_sauce" in password
-6.Click on the green "Login" button
+1. Input "standard_user" in username
+2. Input "wrong_password" in password
+3. Click on the green "Login" button
+4. Delete the previous incorrect password
+5. Input "secret_sauce" in password
+6. Click on the green "Login" button
 
 #### Expected Result
 
@@ -94,11 +94,110 @@ Unsuccessful login, followed by successful login by using correct password
 
 #### Evidence
 
-Captured in evidence folder "Evidence Member-a.png"
+Captured in evidence folder "LOGIN-R01.png"
 
 
 ## Equivalence Partitioning
+### Test ID: AGE-EP-30-A
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status |pass |
+
+#### Purpose
+
+This test checks the default case passes.
+
+#### Preconditions
+
+The validation form is open, and all fields contain correct information
+
+#### Test Data
+
+| Field | Value |
+|First name|Alex|
+|Surname|TestingStudent |
+|Age|30|
+|Country|Zimbabwe|
+|Notes|Manual testing classroom exercise|
+
+#### Steps
+1. Open the validation form
+2. Input "Alex" in first name
+3. Input "TestingStudent" in surname
+4. Input "30" in age
+5. Input "Zimbabwe" 
+6. Input "Manual testing classroom exercise"
+7. Click on submit
+
+#### Expected Result
+
+Submission is successful.
+
+#### Actual Result
+
+Submission happened, same as expected.
+
+#### Evidence
+
+Captured in "Evidence" folder "AGE-EP-30-A.png"
+
+---
+
 
 ## 2-Point Boundary Tests
+### Test ID: AGE-2P-17-A
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status |pass |
+
+#### Purpose
+
+This test inputting 17 for age case passes (Doesn't work).
+
+#### Preconditions
+
+The validation form is open, and all other fields will use the agreed valid baseline
+
+#### Test Data
+
+| Field | Value |
+|First name|Alex|
+|Surname|TestingStudent |
+|Age|"17"|
+|Country|Zimbabwe|
+|Notes|Manual testing classroom exercise|
+
+#### Steps
+1. Open the validation form
+2. Input "Alex" in first name
+3. Input "TestingStudent" in surname
+4. Input "17" in age
+5. Input "Zimbabwe"
+6. Input "Manual testing classroom exercise"
+7. Click on submit
+
+#### Expected Result
+
+The form does not allow the submission and returns an error/popup
+
+#### Actual Result
+
+Expected result happened, form submission failed and returned a popup
+
+#### Evidence
+
+Captured in "Evidence" folder "AGE-2P-17-A.png"
+
+---
+
 
 ## 3-Point Boundary Tests
+
