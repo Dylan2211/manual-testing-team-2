@@ -16,7 +16,7 @@
 |---|---|
 | Test type | Negative |
 | Tester | member-d |
-| Website | ![SauceDemo](https://www.saucedemo.com/) |
+| Website | [SauceDemo](https://www.saucedemo.com/) |
 | Status | Pass |
 
 #### Purpose
@@ -31,7 +31,8 @@ The SauceDemo login page is open.
 
 | Field | Value |
 |---|---|
-| Username: Empty | Password: secret_sauce |
+| Username | (Empty) |
+| Password | secret_sauce |
 
 #### Steps
 
@@ -62,7 +63,7 @@ Login is rejected with validation feedback, "Epic sadface: Username is required"
 |---|---|
 | Test type | Negative / Input-format observation |
 | Tester | member-d |
-| Website | ![Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Website | [Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
 | Status | Pass |
 
 #### Purpose
@@ -102,7 +103,9 @@ The form should reject the blank age input and display an appropriate validation
 
 #### Actual Result
 
-The form displayed the validation message “Please enter a number” when the age field was left blank.
+The form displayed the validation message
+"Please enter a number" when the age field was left empty.
+The form did not proceed with a successful submission.
 
 #### Evidence
 
@@ -116,7 +119,7 @@ The form displayed the validation message “Please enter a number” when the a
 |---|---|
 | Test type | Negative |
 | Tester | member-d |
-| Website | ![Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Website | [Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
 | Status | Pass |
 
 #### Purpose
@@ -156,11 +159,15 @@ The form should reject non-numeric age input and display an appropriate validati
 
 #### Actual Result
 
-The form displayed the validation message “Please enter a number” when abc was entered into the age field.
+The form displayed the validation message
+"Please enter a number" when abc was entered
+into the age field.
+
+The form did not proceed with a successful submission.
 
 #### Evidence
 
-![View screenshot](../evidence/member-d/age-ep-blank-d.png)
+![View screenshot](../evidence/member-d/age-ep-abc-d.png)
 
 ---
 
@@ -171,7 +178,7 @@ The form displayed the validation message “Please enter a number” when abc w
 |---|---|
 | Test type | Negative |
 | Tester | member-d |
-| Website | ![Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Website | [Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
 | Technique | 2-point boundary testing |
 | Status | Pass |
 
@@ -229,13 +236,15 @@ The form displayed the validation message: "Please select a value that is no mor
 |---|---|
 | Test type | Negative |
 | Tester | member-d |
-| Website | ![Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Website | [Test Pages Validation Form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
 | Technique | 3-point boundary testing |
 | Status | Pass |
 
 #### Purpose
 
-To check whether the form rejects age 82, which is immediately above age 81 and outside the maximum accepted age of 80.
+To check whether the form rejects age 82,
+which is the immediate value above boundary value 81
+and is outside the maximum accepted age of 80.
 
 #### Preconditions
 
