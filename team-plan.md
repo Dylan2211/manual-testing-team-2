@@ -68,6 +68,11 @@ The server rejects the baseline first name `Alex` with "Firstname too short". A 
 | Reused results | Identify the original tester, test ID and result file. |
 
 ## Open-Ended Testing Allocation
+A 	Test age 30
+B 	Test age 10
+C 	Test age 90
+D 	Observe blank age handling
+E 	Observe non-numeric input handling using abc
 
 ### Member B — Open-Ended Testing
 
