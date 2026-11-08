@@ -59,4 +59,9 @@ Member D: Test login with a missing username.
 
 ## Open-Ended Testing Allocation
 
+### Member D — Open-Ended Testing
+
+- Chosen area:
+- Question to investigate:
+
 ## Repository Integration Arrangements
