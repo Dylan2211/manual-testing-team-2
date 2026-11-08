@@ -31,7 +31,7 @@ The practical does not provide a specific acceptance criterion for this addition
 
 | Item | Details |
 |---|---|
-| Test type | Exploratory |
+| Test type | Exploratory / Positive |
 | Tester | member-d |
 | Website | [SauceDemo](https://www.saucedemo.com/) |
 | Status | Not run |
@@ -45,6 +45,7 @@ To investigate whether the shopping cart correctly displays multiple added produ
 - The SauceDemo login page is open.
 - The user is logged out.
 - The standard demonstration account is available.
+- The shopping cart is empty.
 
 #### Test Data
 
@@ -62,14 +63,16 @@ To investigate whether the shopping cart correctly displays multiple added produ
 3. Enter the password `secret_sauce`.
 4. Select Login.
 5. Confirm that the inventory page is displayed.
-6. Add Sauce Labs Backpack to the cart.
-7. Add Sauce Labs Bike Light to the cart.
-8. Observe the shopping cart badge.
-9. Open the shopping cart.
-10. Check whether both products are displayed.
-11. Remove Sauce Labs Backpack.
-12. Observe the shopping cart badge again.
-13. Check whether only Sauce Labs Bike Light remains in the cart.
+6. Check that the shopping cart is initially empty.
+7. Add Sauce Labs Backpack to the cart.
+8. Add Sauce Labs Bike Light to the cart.
+9. Observe the shopping cart badge.
+10. Open the shopping cart.
+11. Check whether both products are displayed.
+12. Remove Sauce Labs Backpack.
+13. Observe the shopping cart badge again.
+14. Check whether only Sauce Labs Bike Light remains in the cart.
+15. Confirm that Sauce Labs Backpack is no longer displayed.
 
 #### Expected Result
 
