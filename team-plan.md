@@ -74,6 +74,12 @@ C 	Test age 90
 D 	Observe blank age handling
 E 	Observe non-numeric input handling using abc
 
+###Member A = Open-Ended Testing
+
+- Chosen area: Test validation form Notes field
+- Question to investigate: Does the form handle other language characters?
+
+
 ### Member B — Open-Ended Testing
 
 - Chosen area: Test Pages validation form, surname field.
