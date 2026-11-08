@@ -153,7 +153,7 @@ Captured in "Evidence" folder "AGE-EP-30-A.png"
 
 | Item | Details |
 |---|---|
-| Test type | Positive |
+| Test type | Negative |
 | Tester | member-a |
 | Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
 | Status |pass |
@@ -194,10 +194,60 @@ Expected result happened, form submission failed and returned a popup
 
 #### Evidence
 
-Captured in "Evidence" folder "AGE-2P-17-A.png"
+Captured in "Evidence" folder "AGE-2P-17-A.mp4"
 
 ---
 
 
 ## 3-Point Boundary Tests
+
+### Test ID: AGE-3P-16-A
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status |pass |
+
+#### Purpose
+
+This test inputting 16 for age case passes (Doesn't work).
+
+#### Preconditions
+
+The validation form is open, and all other fields will use the agreed valid baseline
+
+#### Test Data
+
+| Field | Value |
+|First name|Alex|
+|Surname|TestingStudent |
+|Age|"17"|
+|Country|Zimbabwe|
+|Notes|Manual testing classroom exercise|
+
+#### Steps
+1. Open the validation form
+2. Input "Alex" in first name
+3. Input "TestingStudent" in surname
+4. Input "16" in age
+5. Input "Zimbabwe"
+6. Input "Manual testing classroom exercise"
+7. Click on submit
+
+#### Expected Result
+
+The form does not allow the submission and returns an error/popup
+
+#### Actual Result
+
+Expected result happened, form submission failed and returned a popup
+
+#### Evidence
+
+Captured in "Evidence" folder "AGE-3P-16-A"
+
+---
+
 
