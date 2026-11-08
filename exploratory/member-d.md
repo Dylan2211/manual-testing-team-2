@@ -34,7 +34,7 @@ The practical does not provide a specific acceptance criterion for this addition
 | Test type | Exploratory / Positive |
 | Tester | member-d |
 | Website | [SauceDemo](https://www.saucedemo.com/) |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -85,24 +85,42 @@ Based on the assumed shopping cart behaviour:
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+- Both Sauce Labs Backpack and Sauce Labs Bike Light were added to the shopping cart.
+- The shopping cart badge displayed `2`.
+- Both products were displayed in the shopping cart.
+- After removing Sauce Labs Backpack, only Sauce Labs Bike Light remained.
+- The shopping cart badge updated to `1`.
+- Sauce Labs Backpack was no longer displayed in the cart.
 
 #### Evidence
 
-Not captured.
+**Screenshot 1 — Both products added**
+c
+![Both products added](../evidence/member-d/own-d-01-two-products.png)
+
+**Screenshot 2 — Cart after removing one product**
+
+![Cart after removal](../evidence/member-d/own-d-01-cart-after-removal.png)
 
 ---
 
 ## Overall Observations
 
-To be completed after executing the test.
+The shopping cart behaved as expected during the investigation.
 
-Record whether the shopping cart badge and product list updated correctly after adding and removing products.
+After adding two products, the shopping cart badge displayed 2 and both products appeared in the cart. After removing Sauce Labs Backpack, the badge updated to 1 and only Sauce Labs Bike Light remained.
 
-Also record any unexpected behaviour or unclear requirements.
+No unexpected behaviour was observed during this test.
 
 ## Next Question
 
-To be completed after executing the test.
+Does the shopping cart retain its products when the user navigates back to the inventory page and then returns to the cart?
 
-A possible follow-up question is whether the shopping cart retains its products when the user navigates back to the inventory page and then returns to the cart.
+This could be investigated in a follow-up test.
+
+## 12.6 Step 6 — Summarise What You Learned
+
+- **What I investigated:** Whether the shopping cart updates correctly when products are added and removed.
+- **What I learned:** The shopping cart badge and product list updated correctly during the test.
+- **Uncertainty:** Only adding two products and removing one product were investigated. Other shopping cart behaviours have not been tested.
+- **What I would test next:** Navigate back to the inventory page and return to the shopping cart to check whether the remaining product is retained.
