@@ -53,7 +53,7 @@ Member D: Blank age, non-numeric age (abc), 2-point boundary value (81), and 3-p
 
 ### Baseline Issue Found by Member B (8 November 2026)
 
-The server now rejects the baseline first name `Alex` with "Firstname too short". A first name needs at least 5 characters to be accepted, although the published requirements only say it must be filled. `Alexa` is accepted. Age tests run with `Alex` were rejected for the first name, not the age. Details: [Member B self-designed tests](exploratory/member-b.md).
+The server rejects the baseline first name `Alex` with "Firstname too short". A first name needs at least 5 characters to be accepted, although the published requirements only say it must be filled. `Alexa` is accepted. Age tests run with `Alex` were rejected for the first name, not the age. Details: [Member B self-designed tests](exploratory/member-b.md).
 
 ### Testing Rules
 
