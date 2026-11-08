@@ -51,6 +51,10 @@ Member D: Blank age, non-numeric age (abc), 2-point boundary value (81), and 3-p
 | Country | Zimbabwe |
 | Notes | `Manual testing classroom exercise` |
 
+### Baseline Issue Found by Member B (8 November 2026)
+
+The server rejects the baseline first name `Alex` with "Firstname too short". A first name needs at least 5 characters to be accepted, although the published requirements only say it must be filled. `Alexa` is accepted. Age tests run with `Alex` were rejected for the first name, not the age. Details: [Member B self-designed tests](exploratory/member-b.md).
+
 ### Testing Rules
 
 | Rule | Agreement |
@@ -64,6 +68,11 @@ Member D: Blank age, non-numeric age (abc), 2-point boundary value (81), and 3-p
 | Reused results | Identify the original tester, test ID and result file. |
 
 ## Open-Ended Testing Allocation
+
+### Member B — Open-Ended Testing
+
+- Chosen area: Test Pages validation form, surname field.
+- Question to investigate: Does the form treat the stated surname length of "between 11 and 79" characters as inclusive, and does it reject 10 and 80?
 
 ### Member D — Open-Ended Testing
 
