@@ -65,6 +65,11 @@ Member D: Blank age, non-numeric age (abc), 2-point boundary value (81), and 3-p
 
 ## Open-Ended Testing Allocation
 
+### Member B — Open-Ended Testing
+
+- Chosen area: Test Pages validation form, surname field.
+- Question to investigate: Does the form treat the stated surname length of "between 11 and 79" characters as inclusive, and does it reject 10 and 80?
+
 ### Member D — Open-Ended Testing
 
 - Chosen area: SauceDemo shopping cart.
